@@ -55,10 +55,3 @@ def linkerOutputDirectory(v: Attributed[org.scalajs.linker.interface.Report]): F
 
 val publicDev = taskKey[String]("output directory for `npm run dev`")
 val publicProd = taskKey[String]("output directory for `npm run build`")
-
-
-addCommandAlias("prod", "fullOptJS/webpack")
-addCommandAlias("dev", "devInit; devWatchAll; devDestroy")
-addCommandAlias("devInit", "; webapp/fastOptJS/startWebpackDevServer")
-addCommandAlias("devWatchAll", "~; webapp/fastOptJS/webpack")
-addCommandAlias("devDestroy", "webapp/fastOptJS/stopWebpackDevServer")
