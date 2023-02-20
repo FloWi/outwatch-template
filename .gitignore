@@ -43,3 +43,4 @@ bin/
 
 #general
 *.class
+webapp/node_modules
